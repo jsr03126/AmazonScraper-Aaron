@@ -17,7 +17,7 @@ headers = {'Accept':'text/css,*/*;q=0.1',
 		'Accept-Charset':'ISO-8859-1,utf-8;q=0.7,*;q=0.3',
 		'Accept-Encoding':'gzip,deflate,sdch',
 		'Accept-Language':'en-US,en;q=0.8',
-		'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36'}
+		'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.103 Safari/537.36'}
 
 ua = UserAgent() # From here we generate a random user agent
 proxies = [] # Will contain proxies [ip, port]
