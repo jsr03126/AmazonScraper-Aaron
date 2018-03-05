@@ -21,8 +21,17 @@ USER_AGENT = 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefo
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 
+DOWNLOADER_MIDDLEWARES = {'scrapy_crawlera.CrawleraMiddleware': 300}
+CRAWLERA_ENABLED = True
+CRAWLERA_APIKEY = 'aaf0b4f7ffa74789913d1b061d51a14e'
+
+CONCURRENT_REQUESTS = 32
+CONCURRENT_REQUESTS_PER_DOMAIN = 32
+AUTOTHROTTLE_ENABLED = False
+DOWNLOAD_TIMEOUT = 600
+
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-#CONCURRENT_REQUESTS = 32
+# CONCURRENT_REQUESTS = 32
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://doc.scrapy.org/en/latest/topics/settings.html#download-delay
@@ -30,7 +39,7 @@ ROBOTSTXT_OBEY = True
 #DOWNLOAD_DELAY = 3
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
-#CONCURRENT_REQUESTS_PER_IP = 16
+# CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
 #COOKIES_ENABLED = False
